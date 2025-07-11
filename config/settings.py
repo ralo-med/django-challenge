@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "tweets",  # tweets 앱 추가
 ]
 
 MIDDLEWARE = [
