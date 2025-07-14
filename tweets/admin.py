@@ -3,8 +3,11 @@ from .models import Tweet, Like
 
 @admin.register(Tweet)
 class TweetAdmin(admin.ModelAdmin):
-    list_display = ("id", "user", "payload", "created_at", "updated_at")
+    list_display = ("id", "user", "payload", "like_count", "created_at", "updated_at")
     search_fields = ("user__username", "payload")
+    
+    def like_count(self, obj):
+        return obj.likes.count()
 
 @admin.register(Like)
 class LikeAdmin(admin.ModelAdmin):
