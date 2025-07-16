@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tweet List</title>
+  </head>
+  <body>
+    <h1>Tweets</h1>
+    {% for tweet in tweets %}
+    <div>
+      <p><strong>{{ tweet.user }}</strong></p>
+      <p>{{ tweet.payload }}</p>
+      <p>Created: {{ tweet.created_at }}</p>
+    </div>
+    {% endfor %}
+  </body>
+</html>
