@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",  # Django REST Framework 추가
     "tweets",  # tweets 앱 추가
 ]
 
